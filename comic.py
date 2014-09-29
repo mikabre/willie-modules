@@ -8,7 +8,10 @@ from PIL import Image
 
 @willie.module.commands('comic')
 def comic(bot, trigger):
-    stored_lines = len(bot.memory['log'][trigger.sender]['lines'])
+    try:
+        stored_lines = len(bot.memory['log'][trigger.sender]['lines'])
+    except:
+        bot.say('I literally just got here, asshole.')
     offset_length = stored_lines - random.randint(7,12)
     try:
         if trigger.bytes.split(' ', 1)[1].isdigit():
