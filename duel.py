@@ -9,7 +9,7 @@ from datetime import datetime, timedelta
 def duel(bot, trigger):
     x = random.randint(0,1)
     nick = trigger.nick.lower()
-    con = lite.connect('fiolina.db')
+    con = lite.connect('/home/svchost/fiolina.db')
     #if pattern.search(nick):
     #    bot.say("Your name sucks, take out any special characters. Underscores are okay.")
     #    return
