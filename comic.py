@@ -17,6 +17,9 @@ def comic(bot, trigger):
         if trigger.bytes.split(' ', 1)[1].isdigit():
             length = int(trigger.bytes.split(' ', 1)[1])
             offset_length = stored_lines - length
+            if length > 100:
+                offset_length = stored_lines - random.randint(7,12)
+
     except:
         pass
     f = open('/home/svchost/spittoon/spec', 'w')
