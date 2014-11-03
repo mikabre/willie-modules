@@ -19,7 +19,11 @@ def lv(bot, trigger):
 
 @willie.module.commands('id')
 def id(bot, trigger):
-    bot.say("\x03\x02illegal drugs\x02")
+    x = random.randint(0,999)
+    if x == 999:
+        bot.say("\x03\x02illegal dbladez\x02")
+    else:
+        bot.say("\x03\x02illegal drugs\x02")
 
 @willie.module.commands('ld')
 def ld(bot, trigger):
