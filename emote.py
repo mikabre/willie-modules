@@ -24,11 +24,11 @@ def id(bot, trigger):
 @willie.module.commands('ld')
 def ld(bot, trigger):
     x = random.randint(0,29)
-    if x = 9:
+    if x == 9:
         bot.say("\x03\x02There are no legal drugs.\x02")
-    elif x = 19:
+    elif x == 19:
         bot.say("\x03\x02All drugs are illegal.\x02")
-    elif x = 29:
+    elif x == 29:
         bot.say("\x03\x02Your drug use has been logged and reported.\x02")
     else:
         bot.say("\x03\x02legal drugs\x02")
