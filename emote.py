@@ -19,9 +19,12 @@ def lv(bot, trigger):
 
 @willie.module.commands('id')
 def id(bot, trigger):
-    x = random.randint(0,999)
-    if x == 999:
-        bot.say("\x03\x02illegal dbladez\x02")
+    x = random.randint(0,4)
+    y = random.randint(0,999)
+
+    if y == 999:
+        dbladez = ['\x03\x02illegal dbladez\x02','\x03\x02I snuck dbladez into prison up my ass.\x02','\x03\x02I love sniffing whole lines of dbladez.\x02','\x03\x02Twenty-five years in prison was worth it for just one hit of dbladez\x02','\x03\x02Taking dbladez ruined my life.\x02']
+        bot.say(dbladez[x])
     else:
         bot.say("\x03\x02illegal drugs\x02")
 
